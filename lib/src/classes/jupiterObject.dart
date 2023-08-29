@@ -1,0 +1,3 @@
+class JupiterObject {
+  int? tag;
+}
