@@ -22,7 +22,7 @@ class JupiterTwoChildrenHorizontalLayoutDelegate
           Offset(0, size.height / 2));
 
       layoutChild(
-          JupiterTwoChildrenHorizontalLayout.FirstChild,
+          JupiterTwoChildrenHorizontalLayout.SecondChild,
           BoxConstraints.tight(Size(
             size.width,
             size.height / 2,
