@@ -1,15 +1,15 @@
 library jupiter_core;
 
 // Classes
-export "./src/classes/jupiterModel.dart";
-export "./src/classes/jupiterObject.dart";
-export "./src/classes/jupiterRepository.dart";
+export 'src/classes/jupiter_model.dart';
+export 'src/classes/jupiter_object.dart';
+export 'src/classes/jupiter_repository.dart';
 
 // Delegates
-export "./src/delegates/jupiterTwoChildrenHorizontalLayoutDelegate.dart";
-export "./src/delegates/jupiterTwoChildrenVerticalLayoutDelegate.dart";
+export 'src/delegates/jupiter_two_children_horizontal_layout_delegate.dart';
+export 'src/delegates/jupiter_two_children_vertical_layout_delegate.dart';
 
 // Widgets
-export "./src/widgets/jupiterTwoChildrenHorizontalLayout.dart";
-export './src/widgets/jupiterTwoChildrenVerticalLayout.dart';
-export './src/widgets/jupiterTwoChildrenLayout.dart';
+export 'src/widgets/jupiter_two_children_horizontal_layout.dart';
+export 'src/widgets/jupiter_two_children_vertical_layout.dart';
+export 'src/widgets/jupiter_two_children_layout.dart';

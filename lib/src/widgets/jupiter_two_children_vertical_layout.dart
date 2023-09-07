@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import "package:jupiter_core/src/delegates/jupiterTwoChildrenVerticalLayoutDelegate.dart";
+import 'package:jupiter_core/src/delegates/jupiter_two_children_vertical_layout_delegate.dart';
 
 class JupiterTwoChildrenVerticalLayout extends StatelessWidget {
   static const FirstChild = 1;
@@ -18,11 +18,11 @@ class JupiterTwoChildrenVerticalLayout extends StatelessWidget {
       children: [
         LayoutId(
           id: JupiterTwoChildrenVerticalLayout.FirstChild,
-          child: this.firstChild,
+          child: firstChild,
         ),
         LayoutId(
             id: JupiterTwoChildrenVerticalLayout.SecondChild,
-            child: this.secondChild)
+            child: secondChild)
       ],
     );
   }

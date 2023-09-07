@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import "package:jupiter_core/src/widgets/jupiterTwoChildrenHorizontalLayout.dart";
+import 'package:jupiter_core/src/widgets/jupiter_two_children_horizontal_layout.dart';
 
 class JupiterTwoChildrenHorizontalLayoutDelegate
     extends MultiChildLayoutDelegate {

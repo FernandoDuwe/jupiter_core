@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
-import "package:jupiter_core/src/widgets/jupiterTwoChildrenHorizontalLayout.dart";
-import "package:jupiter_core/src/widgets/jupiterTwoChildrenVerticalLayout.dart";
+import 'package:jupiter_core/src/widgets/jupiter_two_children_horizontal_layout.dart';
+import 'package:jupiter_core/src/widgets/jupiter_two_children_vertical_layout.dart';
 
 class JupiterTwoChildrenLayout extends StatelessWidget {
   final Widget firstChild;

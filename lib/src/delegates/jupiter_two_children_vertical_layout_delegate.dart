@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import "package:jupiter_core/src/widgets/jupiterTwoChildrenVerticalLayout.dart";
+import 'package:jupiter_core/src/widgets/jupiter_two_children_vertical_layout.dart';
 
 class JupiterTwoChildrenVerticalDelegate extends MultiChildLayoutDelegate {
   @override
