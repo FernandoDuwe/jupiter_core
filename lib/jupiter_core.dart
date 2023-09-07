@@ -13,3 +13,6 @@ export 'src/delegates/jupiter_two_children_vertical_layout_delegate.dart';
 export 'src/widgets/jupiter_two_children_horizontal_layout.dart';
 export 'src/widgets/jupiter_two_children_vertical_layout.dart';
 export 'src/widgets/jupiter_two_children_layout.dart';
+export 'src/widgets/jupiter_table_line_item.dart';
+export 'src/widgets/jupiter_table_line.dart';
+export 'src/widgets/jupiter_table.dart';

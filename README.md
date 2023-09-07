@@ -34,3 +34,18 @@ Creates a fullscreen layout in a Vertical manner, with two children.
 *JupiterTwoChildrenLayout*
 
 Creates a responsive fullscreen layout, with two children.
+
+
+*JupiterTable*
+
+Base component for JupiterTable family.
+
+
+*JupiterTableLine*
+
+Line component for JupiterTable family.
+
+
+*JupiterTableLineItem*
+
+Item component for JupiterTable family.
