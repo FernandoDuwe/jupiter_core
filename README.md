@@ -21,6 +21,11 @@ Main object for Jupiter package repositories.
 
 ## Widgets
 
+*JupiterAdmobBanner*
+
+AdMob banner integration.
+
+
 *JupiterTwoChildrenHorizontalLayout* using *JupiterTwoChildrenHorizontalLayoutDelegate*
 
 Creates a fullscreen layout in a Horizontal manner, with two children.

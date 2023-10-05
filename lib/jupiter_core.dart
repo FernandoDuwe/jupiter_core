@@ -16,3 +16,4 @@ export 'src/widgets/jupiter_two_children_layout.dart';
 export 'src/widgets/jupiter_table_line_item.dart';
 export 'src/widgets/jupiter_table_line.dart';
 export 'src/widgets/jupiter_table.dart';
+export 'src/widgets/jupiter_admob_banner.dart';
