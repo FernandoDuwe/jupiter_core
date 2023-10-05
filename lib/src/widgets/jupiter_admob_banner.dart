@@ -49,4 +49,11 @@ class _JupiterAdmobBannerState extends State<JupiterAdmobBanner> {
       ),
     );
   }
+
+  @override
+  void dispose() {
+    _bannerAd?.dispose();
+
+    super.dispose();
+  }
 }
