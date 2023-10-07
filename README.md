@@ -26,6 +26,11 @@ Main object for Jupiter package repositories.
 AdMob banner integration.
 
 
+*JupiterRouteTile*
+
+A Route ready tile. Use with a JupiterRouteModel.
+
+
 *JupiterTwoChildrenHorizontalLayout* using *JupiterTwoChildrenHorizontalLayoutDelegate*
 
 Creates a fullscreen layout in a Horizontal manner, with two children.
