@@ -1,5 +1,8 @@
 library jupiter_core;
 
+// Types
+export 'src/utils/types.dart';
+
 // Classes
 export 'src/classes/jupiter_model.dart';
 export 'src/classes/jupiter_object.dart';

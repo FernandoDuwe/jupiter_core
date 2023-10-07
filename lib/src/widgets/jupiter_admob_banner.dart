@@ -1,3 +1,4 @@
+import 'dart:io';
 import "package:flutter/material.dart";
 import "package:google_mobile_ads/google_mobile_ads.dart";
 
@@ -36,9 +37,12 @@ class _JupiterAdmobBannerState extends State<JupiterAdmobBanner> {
     ).load();
   }
 
+  bool get isMobileDevice => (Platform.isAndroid) || (Platform.isIOS);
+
   @override
   Widget build(BuildContext context) {
-    if (_bannerAd == null) return Container(height: 0, width: 0);
+    if ((_bannerAd == null) || (!isMobileDevice))
+      return Container(height: 0, width: 0);
 
     return Align(
       alignment: Alignment.topCenter,
