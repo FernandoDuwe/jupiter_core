@@ -4,6 +4,10 @@ Package to work with Jupiter Applications.
 
 ## Content
 
+*JupiterApp*
+
+Jupiter Application object.
+
 *JupiterObject*
 
 Main object for Jupiter package classes.
@@ -29,6 +33,11 @@ AdMob banner integration.
 *JupiterRouteTile*
 
 A Route ready tile. Use with a JupiterRouteModel.
+
+
+*JupiterSearchTextField*
+
+A text field for searchs.
 
 
 *JupiterTwoChildrenHorizontalLayout* using *JupiterTwoChildrenHorizontalLayoutDelegate*

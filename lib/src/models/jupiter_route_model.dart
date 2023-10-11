@@ -7,6 +7,7 @@ class JupiterRouteModel extends JupiterModel {
   String? route;
   Icon? icon;
   VoidCallback? onClick;
+  List<JupiterRouteModel>? children;
 
   bool get hasRoute => route != null;
 
@@ -14,10 +15,13 @@ class JupiterRouteModel extends JupiterModel {
 
   bool get hasClick => onClick != null;
 
+  bool get hasChildren => ((children != null) && (children!.isNotEmpty));
+
   JupiterRouteModel(
       {required this.title,
       required this.description,
       this.route,
       this.icon,
-      this.onClick});
+      this.onClick,
+      this.children});
 }
