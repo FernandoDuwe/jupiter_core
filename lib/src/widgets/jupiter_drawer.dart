@@ -5,19 +5,34 @@ import "package:jupiter_core/src/widgets/jupiter_app_widget.dart";
 class JupiterDrawer extends StatelessWidget {
   const JupiterDrawer({super.key});
 
-  @override
-  Widget build(BuildContext context) {
+  Widget _getHeader(JupiterApp jupiterApp) {
+    return DrawerHeader(child: Text(jupiterApp.appTitle));
+  }
+
+  List<Widget> _getChildren(BuildContext context) {
     JupiterAppWidget? appWidget = JupiterAppWidget.of(context);
 
-    JupiterApp? app;
+    late JupiterApp jupiterApp;
 
-    if (appWidget != null) app = appWidget!.jupiterApp;
+    if (appWidget != null) {
+      jupiterApp = appWidget!.jupiterApp;
+    } else {
+      jupiterApp = JupiterApp(appTitle: "Aplicação");
+    }
 
+    List<Widget> itens = [_getHeader(jupiterApp)];
+
+    for (JupiterRouteModel model in jupiterApp.routes)
+      itens.add(JupiterRouteTile(jupiterRouteModel: model));
+
+    return itens;
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
-        children: [
-          DrawerHeader(child: Text(app != null ? app!.appTitle : "Aplicação")),
-        ],
+        children: _getChildren(context),
       ),
     );
   }

@@ -25,6 +25,11 @@ Main object for Jupiter package repositories.
 
 ## Widgets
 
+*JupiterAppWidget*
+
+Widget container to JupiterApp object.
+
+
 *JupiterAdmobBanner*
 
 AdMob banner integration.

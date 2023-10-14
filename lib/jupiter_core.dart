@@ -18,6 +18,7 @@ export 'src/delegates/jupiter_two_children_vertical_layout_delegate.dart';
 
 // Widgets
 export 'src/widgets/jupiter_admob_banner.dart';
+export 'src/widgets/jupiter_app_widget.dart';
 export 'src/widgets/jupiter_drawer.dart';
 export 'src/widgets/jupiter_route_tile.dart';
 export 'src/widgets/jupiter_search_text_field.dart';
