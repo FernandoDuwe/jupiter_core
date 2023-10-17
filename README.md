@@ -35,6 +35,11 @@ Widget container to JupiterApp object.
 AdMob banner integration.
 
 
+*JupiterDataCard*
+
+Widget to show data in a card.
+
+
 *JupiterRouteTile*
 
 A Route ready tile. Use with a JupiterRouteModel.
