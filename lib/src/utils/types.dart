@@ -6,3 +6,5 @@ typedef JupiterOnGetString = void Function(String value);
 
 // Enums
 enum JupiterAppType { production, tests, development }
+
+enum JupiterScreenSize { big, medium, small }
