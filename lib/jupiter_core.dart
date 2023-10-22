@@ -1,6 +1,8 @@
 library jupiter_core;
 
 // Types
+export 'src/utils/consts.dart';
+export 'src/utils/mathUtils.dart';
 export 'src/utils/types.dart';
 
 // Classes
@@ -21,6 +23,7 @@ export 'src/widgets/jupiter_admob_banner.dart';
 export 'src/widgets/jupiter_app_widget.dart';
 export 'src/widgets/jupiter_data_card.dart';
 export 'src/widgets/jupiter_drawer.dart';
+export 'src/widgets/jupiter_layout_builder.dart';
 export 'src/widgets/jupiter_route_tile.dart';
 export 'src/widgets/jupiter_search_text_field.dart';
 export 'src/widgets/jupiter_two_children_horizontal_layout.dart';

@@ -40,6 +40,11 @@ AdMob banner integration.
 Widget to show data in a card.
 
 
+*JupiterLayoutBuilder*
+
+Widget to generate a responsive layout.
+
+
 *JupiterRouteTile*
 
 A Route ready tile. Use with a JupiterRouteModel.
