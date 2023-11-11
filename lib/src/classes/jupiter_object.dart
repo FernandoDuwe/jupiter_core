@@ -1,4 +1,4 @@
 class JupiterObject {
-  int objectIdentifier = DateTime.now().millisecondsSinceEpoch;
+  int objectIdentifier = DateTime.now().microsecondsSinceEpoch;
   int? tag;
 }
