@@ -19,3 +19,5 @@ enum JupiterAppType { production, tests, development }
 enum JupiterScreenSize { big, medium, small }
 
 enum JupiterPlataform { android, ios, macos, windows, linux, web }
+
+enum JupiterChatTileMessageType { sender, receiver, none }

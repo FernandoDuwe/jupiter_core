@@ -35,6 +35,16 @@ Widget container to JupiterApp object.
 AdMob banner integration.
 
 
+*JupiterChatBallon*
+
+Widget to show a chat message.
+
+
+*JupiterChatTile*
+
+Widget to create a chat timeline.
+
+
 *JupiterDataCard*
 
 Widget to show data in a card.
