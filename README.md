@@ -40,6 +40,11 @@ AdMob banner integration.
 Widget to show a chat message.
 
 
+*JupiterChatInfoCard*
+
+Widget to create a chat information.
+
+
 *JupiterChatTile*
 
 Widget to create a chat timeline.

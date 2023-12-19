@@ -23,6 +23,7 @@ export 'src/delegates/jupiter_two_children_vertical_layout_delegate.dart';
 export 'src/widgets/jupiter_admob_banner.dart';
 export 'src/widgets/jupiter_app_widget.dart';
 export 'src/widgets/jupiter_chat_ballon.dart';
+export 'src/widgets/jupiter_chat_info_card.dart';
 export 'src/widgets/jupiter_chat_tile.dart';
 export 'src/widgets/jupiter_data_card.dart';
 export 'src/widgets/jupiter_drawer.dart';
