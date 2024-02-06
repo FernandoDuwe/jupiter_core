@@ -1,8 +1,13 @@
 import "package:flutter/material.dart";
+import 'package:jupiter_core/src/models/jupiter_layout_info.dart';
 import 'package:jupiter_core/src/widgets/jupiter_two_children_horizontal_layout.dart';
 
 class JupiterTwoChildrenHorizontalLayoutDelegate
     extends MultiChildLayoutDelegate {
+  final JupiterLayoutInfo layoutInfo;
+
+  JupiterTwoChildrenHorizontalLayoutDelegate({required this.layoutInfo});
+
   @override
   void performLayout(Size size) {
     if (hasChild(JupiterTwoChildrenHorizontalLayout.FirstChild)) {
@@ -13,19 +18,19 @@ class JupiterTwoChildrenHorizontalLayoutDelegate
           JupiterTwoChildrenHorizontalLayout.FirstChild,
           BoxConstraints.tight(Size(
             size.width,
-            size.height / 2,
+            this.layoutInfo.firstPanelSizeFrom(size.height),
           )));
     }
 
     if (hasChild(JupiterTwoChildrenHorizontalLayout.SecondChild)) {
       positionChild(JupiterTwoChildrenHorizontalLayout.SecondChild,
-          Offset(0, size.height / 2));
+          Offset(0, this.layoutInfo.firstPanelSizeFrom(size.height)));
 
       layoutChild(
           JupiterTwoChildrenHorizontalLayout.SecondChild,
           BoxConstraints.tight(Size(
             size.width,
-            size.height / 2,
+            this.layoutInfo.secondPanelSizeFrom(size.height),
           )));
     }
   }

@@ -15,6 +15,7 @@ export 'src/classes/jupiter_repository.dart';
 export 'src/models/jupiter_route_model.dart';
 export 'src/models/jupiter_time.dart';
 export 'src/models/jupiter_about_screen_information.dart';
+export 'src/models/jupiter_layout_info.dart';
 
 // Screens
 export 'src/screens/jupiter_about_screen.dart';

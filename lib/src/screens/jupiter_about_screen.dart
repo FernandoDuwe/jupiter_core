@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jupiter_core/jupiter_core.dart';
 import 'package:jupiter_core/src/models/jupiter_about_screen_information.dart';
+import 'package:jupiter_core/src/models/jupiter_layout_info.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -23,6 +24,7 @@ class JupiterAboutScreen extends StatelessWidget {
       ),
       extendBodyBehindAppBar: true,
       body: JupiterTwoChildrenLayout(
+        layoutInfo: JupiterLayoutInfo(30, 70),
         firstChild: Container(
           decoration: BoxDecoration(
               gradient: LinearGradient(
