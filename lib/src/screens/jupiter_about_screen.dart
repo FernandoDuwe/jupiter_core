@@ -46,12 +46,14 @@ class JupiterAboutScreen extends StatelessWidget {
         secondChild: ListView(
           children: [
             ListTile(
-              leading: Icon(Icons.apps),
+              title: Text(this.information.aboutLabel),
+              subtitle: Text(this.information.appName),
+            ),
+            ListTile(
               title: Text(this.information.aboutVersionLabel),
               subtitle: Text(packageInfo.version),
             ),
             ListTile(
-              leading: Icon(Icons.privacy_tip_outlined),
               title: Text(this.information.aboutPolicyTitleLabel),
               subtitle: Text(this.information.aboutPolicySubTitleLabel),
               onTap: () {
@@ -59,6 +61,7 @@ class JupiterAboutScreen extends StatelessWidget {
 
                 launchUrl(url);
               },
+              trailing: Icon(Icons.link),
             ),
           ],
         ),
