@@ -1,11 +1,13 @@
 import 'dart:io';
 import "package:flutter/material.dart";
 import "package:google_mobile_ads/google_mobile_ads.dart";
+import "package:jupiter_core/src/models/jupiter_admob_banner_dummy_data.dart";
 
 class JupiterAdmobBanner extends StatefulWidget {
   final String bannerId;
+  final JupiterAdmobBannerDummyData? dummyData;
 
-  const JupiterAdmobBanner({required this.bannerId, super.key});
+  const JupiterAdmobBanner({required this.bannerId, this.dummyData, super.key});
 
   @override
   State<JupiterAdmobBanner> createState() => _JupiterAdmobBannerState();
@@ -41,8 +43,15 @@ class _JupiterAdmobBannerState extends State<JupiterAdmobBanner> {
 
   @override
   Widget build(BuildContext context) {
-    if ((_bannerAd == null) || (!isMobileDevice))
-      return Container(height: 0, width: 0);
+    if ((_bannerAd == null) || (!isMobileDevice)) {
+      if (widget.dummyData == null) return Container(height: 0, width: 0);
+
+      return Container(
+        height: widget.dummyData!.height,
+        width: widget.dummyData!.width,
+        child: widget.dummyData!.child,
+      );
+    }
 
     return Align(
       alignment: Alignment.topCenter,
