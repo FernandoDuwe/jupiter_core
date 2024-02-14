@@ -6,4 +6,9 @@ class JupiterAdmobBannerDummyData {
   Widget? child;
 
   JupiterAdmobBannerDummyData(this.height, this.width, [this.child]);
+
+  JupiterAdmobBannerDummyData.banner() {
+    this.height = 50;
+    this.width = 320;
+  }
 }
