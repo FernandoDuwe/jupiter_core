@@ -20,6 +20,8 @@ class _JupiterAdmobBannerState extends State<JupiterAdmobBanner> {
   void initState() {
     super.initState();
 
+    if (!this.isMobileDevice) return;
+
     // Loadig banner...
     BannerAd(
       adUnitId: widget.bannerId,
@@ -46,11 +48,13 @@ class _JupiterAdmobBannerState extends State<JupiterAdmobBanner> {
     if ((_bannerAd == null) || (!isMobileDevice)) {
       if (widget.dummyData == null) return Container(height: 0, width: 0);
 
-      return Container(
-        height: widget.dummyData!.height,
-        width: widget.dummyData!.width,
-        child: widget.dummyData!.child,
-      );
+      return Align(
+          alignment: Alignment.topCenter,
+          child: Container(
+            height: widget.dummyData!.height,
+            width: widget.dummyData!.width,
+            child: widget.dummyData!.child,
+          ));
     }
 
     return Align(
