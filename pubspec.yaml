@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  google_mobile_ads: ^3.0.0
+  google_mobile_ads: ^4.0.0
   package_info_plus: ^5.0.1
   url_launcher: ^6.2.4
 
