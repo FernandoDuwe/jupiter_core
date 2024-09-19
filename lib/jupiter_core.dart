@@ -15,7 +15,6 @@ export 'src/classes/jupiter_repository.dart';
 export 'src/models/jupiter_route_model.dart';
 export 'src/models/jupiter_time.dart';
 export 'src/models/jupiter_about_screen_information.dart';
-export 'src/models/jupiter_admob_banner_dummy_data.dart';
 export 'src/models/jupiter_layout_info.dart';
 
 // Screens
@@ -26,7 +25,6 @@ export 'src/delegates/jupiter_two_children_horizontal_layout_delegate.dart';
 export 'src/delegates/jupiter_two_children_vertical_layout_delegate.dart';
 
 // Widgets
-export 'src/widgets/jupiter_admob_banner.dart';
 export 'src/widgets/jupiter_app_widget.dart';
 export 'src/widgets/jupiter_chat_ballon.dart';
 export 'src/widgets/jupiter_chat_info_card.dart';
