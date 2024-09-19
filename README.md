@@ -4,97 +4,80 @@ Package to work with Jupiter Applications.
 
 ## Content
 
-*JupiterApp*
+_JupiterApp_
 
 Jupiter Application object.
 
-*JupiterObject*
+_JupiterObject_
 
 Main object for Jupiter package classes.
 
-
-*JupiterModel*
+_JupiterModel_
 
 Main object for Jupiter package models.
 
-
-*JupiterRepository*
+_JupiterRepository_
 
 Main object for Jupiter package repositories.
 
-
 ## Widgets
 
-*JupiterAppWidget*
+_JupiterAppWidget_
 
 Widget container to JupiterApp object.
 
-
-*JupiterAdmobBanner*
-
-AdMob banner integration.
-
-
-*JupiterChatBallon*
+_JupiterChatBallon_
 
 Widget to show a chat message.
 
-
-*JupiterChatInfoCard*
+_JupiterChatInfoCard_
 
 Widget to create a chat information.
 
-
-*JupiterChatTile*
+_JupiterChatTile_
 
 Widget to create a chat timeline.
 
-
-*JupiterDataCard*
+_JupiterDataCard_
 
 Widget to show data in a card.
 
-
-*JupiterLayoutBuilder*
+_JupiterLayoutBuilder_
 
 Widget to generate a responsive layout.
 
-
-*JupiterRouteTile*
+_JupiterRouteTile_
 
 A Route ready tile. Use with a JupiterRouteModel.
 
-
-*JupiterSearchTextField*
+_JupiterSearchTextField_
 
 A text field for searchs.
 
-
-*JupiterTwoChildrenHorizontalLayout* using *JupiterTwoChildrenHorizontalLayoutDelegate*
+_JupiterTwoChildrenHorizontalLayout_ using _JupiterTwoChildrenHorizontalLayoutDelegate_
 
 Creates a fullscreen layout in a Horizontal manner, with two children.
 
-
-*JupiterTwoChildrenVerticalLayout* using *JupiterTwoChildrenVerticalDelegate*
+_JupiterTwoChildrenVerticalLayout_ using _JupiterTwoChildrenVerticalDelegate_
 
 Creates a fullscreen layout in a Vertical manner, with two children.
 
-
-*JupiterTwoChildrenLayout*
+_JupiterTwoChildrenLayout_
 
 Creates a responsive fullscreen layout, with two children.
 
+_JupiterTwoLayerLayout_
 
-*JupiterTable*
+Back and Frond layout
+
+_JupiterTable_
 
 Base component for JupiterTable family.
 
-
-*JupiterTableLine*
+_JupiterTableLine_
 
 Line component for JupiterTable family.
 
-
-*JupiterTableLineItem*
+_JupiterTableLineItem_
 
 Item component for JupiterTable family.
