@@ -1,36 +1,30 @@
-import 'dart:convert';
-
 import 'package:dio/dio.dart';
 import 'package:jupiter_core/src/classes/jupiter_model.dart';
 import 'package:jupiter_core/src/classes/jupiter_object.dart';
 import 'package:jupiter_core/src/utils/types.dart';
 
 class JupiterRepository extends JupiterObject {
-  static Future<JupiterModel?> get(
-      String prEntryPoint, JupiterJson? prQueryParams) async {
+  static Future<JupiterModel?> get(String prEntryPoint,
+      {Options? prOptions, JupiterJson? prQueryParams}) async {
     final dio = Dio();
 
-    Response response =
-        await dio.get(prEntryPoint, queryParameters: prQueryParams);
+    Response response = await dio.get(prEntryPoint,
+        queryParameters: prQueryParams, options: prOptions);
 
-    dynamic vrReturnData = jsonDecode(response.data.toString());
-
-    return JupiterModel.asFieldList(vrReturnData as JupiterJson);
+    return JupiterModel.fromJson(response.data as JupiterJson);
   }
 
-  static Future<List<JupiterModel>> getMany(
-      String prEntryPoint, JupiterJson? prQueryParams) async {
+  static Future<List<JupiterModel>> getMany(String prEntryPoint,
+      {Options? prOptions, JupiterJson? prQueryParams}) async {
     final dio = Dio();
 
-    Response response =
-        await dio.get(prEntryPoint, queryParameters: prQueryParams);
-
-    dynamic vrReturnData = jsonDecode(response.data.toString());
+    Response response = await dio.get(prEntryPoint,
+        queryParameters: prQueryParams, options: prOptions);
 
     List<JupiterModel> vrList = [];
 
-    (vrReturnData as List<JupiterJson>)
-        .forEach((element) => vrList.add(JupiterModel.asFieldList(element)));
+    (response.data as List<dynamic>).forEach(
+        (element) => vrList.add(JupiterModel.fromJson(element as JupiterJson)));
 
     return vrList;
   }

@@ -6,7 +6,7 @@ class JupiterModel extends JupiterObject {
 
   JupiterModel();
 
-  JupiterModel.asFieldList(JupiterJson json) {
+  JupiterModel.fromJson(JupiterJson json) {
     this.fields = json;
   }
 
