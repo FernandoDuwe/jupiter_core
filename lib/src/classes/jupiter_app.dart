@@ -5,6 +5,7 @@ import 'package:jupiter_core/src/utils/types.dart';
 class JupiterApp extends JupiterObject {
   // Application Title
   String appTitle = "";
+  String basePath = "";
 
   // Application requires logged access
   bool requestLogin = false;
@@ -18,8 +19,10 @@ class JupiterApp extends JupiterObject {
       {required this.appTitle,
       bool? appRequestLogin,
       JupiterAppType? jupiterAppType,
+      String? prBasePath,
       List<JupiterRouteModel>? appRoutes}) {
     requestLogin = (appRequestLogin ?? false);
+    this.basePath = (prBasePath ?? "");
     appType = (jupiterAppType ?? JupiterAppType.production);
     routes = (appRoutes ?? []);
   }

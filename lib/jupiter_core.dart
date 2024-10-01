@@ -7,6 +7,7 @@ export 'src/utils/types.dart';
 
 // Classes
 export 'src/classes/jupiter_app.dart';
+export 'src/classes/jupiter_context.dart';
 export 'src/classes/jupiter_model.dart';
 export 'src/classes/jupiter_object.dart';
 export 'src/classes/jupiter_repository.dart';
@@ -23,6 +24,10 @@ export 'src/screens/jupiter_about_screen.dart';
 // Delegates
 export 'src/delegates/jupiter_two_children_horizontal_layout_delegate.dart';
 export 'src/delegates/jupiter_two_children_vertical_layout_delegate.dart';
+
+// Extensions
+export 'src/extensions/double_extension.dart';
+export 'src/extensions/string_extension.dart';
 
 // Widgets
 export 'src/widgets/jupiter_app_widget.dart';
