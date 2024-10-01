@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64e56c93-c32b-4c8a-ac24-30392a608570" name="Changes" comment="Creating: JupiterContext + Extensions" />
+    <list default="true" id="64e56c93-c32b-4c8a-ac24-30392a608570" name="Changes" comment="Creating: JupiterContext + Extensions">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/extensions/double_extension.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/extensions/double_extension.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
